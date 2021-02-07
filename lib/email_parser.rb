@@ -14,6 +14,9 @@ class EmailAddressParser
   def parse
     email.split(/, | /).uniq
   end
-
+    #parses CSV emails
+    #parses space delimited emails
+    #parses both CSV and space delimited emails
+    #parses and removes duplicate emails
 
 end
