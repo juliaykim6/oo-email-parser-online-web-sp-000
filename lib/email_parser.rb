@@ -11,8 +11,8 @@ class EmailAddressParser
     @email = email
   end
 
-  def parse(csv)
-    address = email[1].gsub("@")
+  def parse
+    email.split(/, | /).uniq
   end
 
 
